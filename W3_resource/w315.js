@@ -15,7 +15,3 @@ function myFunc(x){
 myFunc(library);
 
 console.log(arr);
-/*
-Exception: SyntaxError: missing ] in index expression
-@Scratchpad/12:11
-*/
