@@ -7,7 +7,14 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+function contains(arr, n) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == n) {
+            return true;
+        }
+    }
+    return false;
 }
+arr = [2, 5, 9, 6];
+console.log(contains(arr, 5));
+console.log(contains(arr,1));

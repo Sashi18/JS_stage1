@@ -7,7 +7,11 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+
+for(var i = 0;i < a.length;i++){
+  console.log("Row "+i);
+  for(var j = 0;j < a[i].length;j++){
+    console.log(a[i][j]);
+  }
 }

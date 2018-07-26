@@ -7,7 +7,9 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+function array_Clone(arr){
+  return arr.slice(0);
 }
+
+console.log(array_Clone([1, 2, 4, 0])); 
+console.log(array_Clone([1, 2, [4, 0]]));

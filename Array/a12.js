@@ -7,7 +7,14 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+var arr = [1, 2, 3, 4, 5],
+    sum = 0, 
+    prod = 1;
+
+for(var i = 0;i < arr.length;i++){
+  sum += arr[i];
+  prod *= arr[i];
 }
+
+console.log("Sum: "+sum+"\nProduct: "+prod);
+

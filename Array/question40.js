@@ -7,7 +7,20 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+
+var a=[];
+var i;
+function arr(r1,r2)
+{
+  var temp=r1;
+  for(i=0;i<r2;i++)
+    {
+      a[i]=temp;
+      temp++;
+    }
+  console.log(a);
 }
+
+arr(2,2);
+arr(3,6);
+arr(-4,6)

@@ -7,7 +7,12 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+function random_item(items)
+{
+  
+return items[Math.floor(Math.random()*items.length)];
+     
 }
+
+var items = [254, 45, 212, 365, 2543];
+console.log(random_item(items));

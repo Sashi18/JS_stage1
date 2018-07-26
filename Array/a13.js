@@ -7,7 +7,18 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+var arr = [];
+
+function add(a, key, val){
+  arr[key] = val;
 }
+
+function display(a){
+  console.log(a);
+}
+
+add(arr, 0, "b");
+add(arr, 1, "b");
+add(arr, 2, 5);
+
+display(arr);

@@ -7,7 +7,16 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-while(1){
-	var t = new Date();
-	console.log(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+function longest_common_starting_substring(s, str){
+  if(str.length > s.length){
+    if(str.indexOf(s) != -1)
+      return s;
+  }
+  else{
+    if(s.indexOf(str) != -1)
+      return str;
+  }
 }
+
+console.log(longest_common_starting_substring('go', 'google'));
+console.log(longest_common_starting_substring('SQL', 'SQLInjection'));
